@@ -15,8 +15,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerDoc();
 
 builder.Services.AddAuthentication()
-//.AddCookie(IdentityConstants.ApplicationScheme);
-.AddBearerToken(IdentityConstants.BearerScheme);
+.AddCookie(IdentityConstants.ApplicationScheme);
+//.AddBearerToken(IdentityConstants.BearerScheme);
 builder.Services.AddAuthorization();
 
 builder.Services.AddIdentityCore<User>()
